@@ -20,10 +20,6 @@ RUN pip3 install -r haproxy-wi/requirements.txt
 RUN chmod +x haproxy-wi/app/*.py 
 RUN cp haproxy-wi/config_other/logrotate/* /etc/logrotate.d/
 RUN cp haproxy-wi/config_other/syslog/* /etc/rsyslog.d/
-# RUN systemctl daemon-reload 
-# RUN systemctl restart httpd
-# RUN systemctl restart rsyslog
-# RUN mkdir /var/www/haproxy-wi/app/certs
 RUN mkdir /var/www/haproxy-wi/keys
 RUN mkdir /var/www/haproxy-wi/configs/
 RUN mkdir /var/www/haproxy-wi/configs/hap_config/
