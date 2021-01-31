@@ -3,7 +3,7 @@ ENV TZ=Europe/Amsterdam
 WORKDIR /var/www/
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update
-RUN apt-get install rsyslog git net-tools lshw dos2unix apache2 \
+RUN apt-get install rsyslog git net-tools lshw dos2unix apache2 haproxy \
     python3-pip g++ freetype2-demos libatlas-base-dev apache2-ssl-dev netcat python3 \
     python3-ldap libpq-dev python-dev libpython2-dev libxml2-dev libxslt1-dev libldap2-dev \
     libsasl2-dev libffi-dev python3-dev libssl-dev gcc rsync ansible \
