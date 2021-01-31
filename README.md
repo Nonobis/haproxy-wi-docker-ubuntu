@@ -3,6 +3,6 @@ Dockerfile to create an Ubuntu 20.04 based HAProxy container with web based admi
 
 # Usage
 ## Build container image
-    docker build -t haproxy-wi .
+    docker build -t haproxy-ubuntu-wi .
 ## Run container
-    docker run -dp 443:443 haproxy-wi
+    docker run -dp 443:443 haproxy-ubuntu-wi
